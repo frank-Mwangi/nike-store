@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Oswald;
+  font-weight: 500;
+}
+header {
+  font-weight: 600px;
+}
+form {
+  size: inherit;
+  color: #555;
+  width: 100%;
+  display: flex;
+  padding: 2px;
+  margin-bottom: 5px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+input[type="search"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.7;
+}
+button[type="submit"]::hover {
+  opacity: 0.5;
+}
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+.top {
+  display: inline-block;
+  text-align: left;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  color: black;
+}
+*/ .form-input {
+  margin: 0;
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 16px;
+  /* border-right: none; */
+}
+.search-btn {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 0;
+  /* border-left: none; */
+}
+.search-icon {
+  margin: 0;
+}
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sneakerlist {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 300px;
+  gap: 16px;
+  justify-content: center;
+}
+
+.sneaker {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (min-width: 650px) {
+  .sneakerlist {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media (min-width: 950px) {
+  .sneakerlist {
+    grid-template-columns: repeat(3, 300px);
+  }
+}
