@@ -91,8 +91,7 @@ const SneakerList = () => {
     return (
          <section className='sneakerlist'>
             {sneakers.map((sneaker) => {
-             //const { img, name, price, id } = sneaker;
-             return <Sneaker img={sneaker.img} name={sneaker.name} price={sneaker.price} key={sneaker.id}/>
+             return <Sneaker {...sneaker} key={sneaker.id}/>
              })}
          </section>
     )
